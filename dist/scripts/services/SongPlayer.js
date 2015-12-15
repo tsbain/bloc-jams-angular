@@ -1,6 +1,11 @@
 (function() {
-  function SongPlayer() {
+  function SongPlayer(Fixtures) {
     var SongPlayer = {};
+
+    // @desc Inject Fixtures service, access and store song and album info
+    // @param {Object} albumData
+
+    var currentAlbum = Fixtures.getAlbum();
 
     // @desc Buzz object audio file
     // @type {Object}
@@ -38,6 +43,12 @@
       song.playing = true;
     };
 
+    // @function get song index
+
+    var getSongIndex = function(song) {
+      return currentAlbum.songs.indexOf(song);
+    };
+
     SongPlayer.currentSong = null;
 
     SongPlayer.play = function(song) {
@@ -62,6 +73,22 @@
       song = song || SongPlayer.currentSong;
       currentBuzzObject.pause();
       song.playing = false;
+    };
+
+    // @function previous
+    // @desc return to previous song
+
+    SongPlayer.previous = function() {
+      var currentSongIndex = getSongIndex(SongPlayer.currentSong);
+      currentSongIndex--;
+      if (currentSongIndex < 0) {
+        currentBuzzObject.stop();
+        SongPlayer.currentSong.playing = null;
+      } else {
+        var song = currentAlbum.songs[currentSongIndex];
+        setSong(song);
+        playSong(song);
+      }
     };
 
     return SongPlayer;
