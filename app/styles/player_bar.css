@@ -31,7 +31,7 @@
     display: table-cell;
     vertical-align: middle;
 }
-    
+
 .player-bar .main-controls {
     width: 25%;
     text-align: left;
@@ -103,7 +103,7 @@ seek-control .total-time {
 
 .seek-bar .fill {
     background: white;
-    width: 36%;
+    width: 0%;
     height: 0.25rem;
     border-radius: 2px;
 }
@@ -113,7 +113,7 @@ seek-control .total-time {
     height: 0.5rem;
     width: 0.5rem;
     background: white;
-    left: 36%;
+    left: 0%;
     top: 50%;
     margin-left: -0.25rem;
     margin-top: -0.25rem;
@@ -154,7 +154,7 @@ seek-control .total-time {
         padding: 1rem;
         background: rgba(0,0,0,0.6);
     }
-    
+
     .player-bar .main-controls,
     .player-bar .currently-playing,
     .player-bar .volume {
@@ -164,25 +164,22 @@ seek-control .total-time {
         width: 100%;
         text-align: center;
     }
-    
+
     .player-bar .main-controls,
     .player-bar .volume {
         min-height: 3.5rem;
     }
-    
+
     .player-bar .currently-playing {
         min-height: 2.5rem;
     }
-    
+
     .player-bar .artist-name,
     .player-bar .song-name {
         display: none;
     }
-    
+
     .player-bar .artist-song-mobile {
         display: block;
     }
 }
-
-
-
