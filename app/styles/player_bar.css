@@ -57,7 +57,7 @@
 .player-bar .currently-playing .artist-name,
 .player-bar .currently-playing .artist-song-mobile {
     text-align: center;
-    font-size: 0.75rem;
+    font-size: 1.0rem;
     margin: 0;
     position: absolute;
     width: 100%;
@@ -84,17 +84,17 @@
 
 .seek-control .current-time {
     position: absolute;
-    top: 0.5rem;
+    top: 0.75rem;
 }
 
-seek-control .total-time {
+.seek-control .total-time {
     position: absolute;
     right: 0;
-    top: 0.5rem;
+    top: 0.75rem;
 }
 
 .seek-bar {
-    height: 0.25rem;
+    height: 0.30rem;
     background: rgba(255, 255, 255, 0.3);
     border-radius: 2px;
     position: relative;
@@ -110,8 +110,8 @@ seek-control .total-time {
 
 .seek-bar .thumb {
     position: absolute;
-    height: 0.5rem;
-    width: 0.5rem;
+    height: 0.6rem;
+    width: 0.6rem;
     background: white;
     left: 0%;
     top: 50%;
@@ -133,14 +133,23 @@ seek-control .total-time {
 }
 
 .player-bar .volume {
-    width: 25%;
+    width: 17.5%;
     text-align: right;
+		font-size: 0.85rem;
+}
+
+.current-volume {
+		font-size: 0.85rem;
+		padding-right: 22.5%;
+		/*position: absolute;*/
+    top: 0.75rem;
 }
 
 .player-bar .volume .icon {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     display: inline-block;
     vertical-align: middle;
+		padding-right: 1.2rem;
 }
 
 .player-bar .volume .seek-bar {

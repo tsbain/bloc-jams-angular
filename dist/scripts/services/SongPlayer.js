@@ -141,7 +141,7 @@
       if (currentBuzzObject) {
         currentBuzzObject.setVolume(volume);
       }
-      SongPlayer.volume = volume;
+      SongPlayer.volume = volume.toFixed(0);
     };
 
     return SongPlayer;
