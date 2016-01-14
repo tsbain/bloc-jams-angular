@@ -141,8 +141,7 @@
 .current-volume {
 		font-size: 0.85rem;
 		padding-right: 22.5%;
-		/*position: absolute;*/
-    top: 0.75rem;
+		top: 0.75rem;
 }
 
 .player-bar .volume .icon {

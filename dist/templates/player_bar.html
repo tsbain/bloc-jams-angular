@@ -31,8 +31,7 @@
     <div class="control-group volume">
       <span class="icon ion-volume-high"></span>
       <seek-bar value="{{ playerBar.songPlayer.volume }}" max="100" on-change="playerBar.songPlayer.setVolume(value)"></seek-bar>
-      <div class="current-volume" id="volume-display">{{ playerBar.songPlayer.volume }}</div>
+      <div class="current-volume">{{ playerBar.songPlayer.volume }}</div>
     </div>
-
   </div>
 </section>

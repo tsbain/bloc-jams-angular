@@ -144,8 +144,7 @@
       SongPlayer.volume = volume.toFixed(0);
     };
 
-    return SongPlayer;
-
+return SongPlayer;
 }
 
 
